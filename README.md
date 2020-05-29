@@ -1,6 +1,6 @@
 # Minimarket Lucy
 
-Tus compras de siempre, solo aquí.
+Tus compras de siempre, solo aquí. http://www.lucy.edgarcornejo.com/
 
 ## Comenzando 🚀
 
