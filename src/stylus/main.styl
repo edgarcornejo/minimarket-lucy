@@ -1,17 +1,25 @@
 /* HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+:root
+  font-size 16px
+  --yellowLucy hsl(55, 100%, 50%)
+  --orangeLucy hsl(36, 93%, 51%)
+  --redLucy hsl(356, 97%, 45%)
+  --purpleLucy hsl(246, 68%, 32%)
+
 html
-  font-size 1em
   line-height 1.4
   height 100%
 
+/*selection*/
 ::-moz-selection
-  background #FFEA00
+  background var(--yellowLucy)
   text-shadow none
 
 ::selection
-  background #FFEA00
+  background var(--yellowLucy)
   text-shadow none
 
+/*Separator*/
 hr
   display block
   height 1px
@@ -35,7 +43,7 @@ textarea
   margin .2em 0
   background #ccc
   color #000
-  padding .2em 0
+  padding .2rem 0
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
   margin 0
@@ -59,12 +67,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 @viewport
   width device-width
 
+/*reset hyperlink*/
 a
-  color #fff
+  color var(--orangeLucy)
   text-decoration none
   &:hover
-    color #f60
+    color var(--redLucy) 
 
+/*Basic animation*/
 .anin-rapido
   transition all .2s ease-out
 
@@ -74,34 +84,39 @@ a
 .anin-lento
   transition all 1s ease-out
 
+/*Main*/
 body
-  background #FFEA00
+  background var(--yellowLucy)
   width 100%
   height 100%
-  color #E20613
-  font-size 16px
-  font-family 'Exo 2',sans-serif,Helvetica,Arial
-  font-variant-ligatures no-common-ligatures
-  -webkit-font-variant-ligatures no-common-ligatures
+  color var(--redLucy) 
+  font-size 1rem
+  font-family 'Muli',sans-serif,Helvetica,Arial
 
-#main
+#cover
+  height 100%
+  display flex
+  justify-content center
+
+#wraper
   display flex
   justify-content center
 
 #logo
   align-self center
   width auto/9
-  max-width 90%
+  max-width 80%
   height auto
   
 .dowm
   display block
   margin 0 auto
-  width 44px
+  width 3rem
   height auto
   position relative
-  top -80px
+  top -10rem
 
+/*animation in main*/
 .floating
   animation-name floating
   -webkit-animation-name floating
@@ -118,91 +133,83 @@ body
   100%
     transform translateY(0%)
 
-@-webkit-keyframes floating
-  0%
-    -webkit-transform translateY(0%) 
-  50%
-    -webkit-transform translateY(12%)
-  100%
-    -webkit-transform translateY(0%)
-  
-  
+/*Header*/
 header
   text-align center
-  padding 50px 0 50px 0
-  background #31287C
-  color #FFF
+  padding 3rem 0 3rem 0
+  background var(--purpleLucy) 
+  color #FFFFFF
   h1
-    font-size 27px
+    font-size 2.1rem
+    padding-bottom 0.8rem
+  hr
+    width 18rem
+    margin 0 auto
+    padding-top 0.8rem
   strong
-    font-size 21px
+    font-size 1rem
+    font-style italic
+    font-weight normal
 
-/*Secciones*/
+/*Section styles*/
 section
   width 90%
   max-width 1024px
   margin 0 auto
-  min-height 100%
-  height auto
   article
-    padding 20px 0 20px 0
+    padding 6rem 0 6rem 0
   h2
     text-align center
-    font-size 50px
-    border-bottom double 4px #E20613
-    padding-bottom 20px
+    font-size 3rem
+    border-bottom double 4px var(--redLucy)
+    padding-bottom 1.5rem
   p
-    font-size 28px
-    text-align center
-    padding-top 80px
-    max-width980px
+    font-size 1.5rem
+    padding-top 5rem
+    max-width 980px
     display block
     margin 0 auto
   h3
     text-align center
-    font-size 37px
+    font-size 2rem
     padding-top 50px
   h4
-    background #FFEA00
-    font-size 21px
+    background var(--yellowLucy)
+    font-size 1.2rem
 
+figure
+  text-align center
+  img
+    margin 3rem auto
+    width auto/9
+    max-width 15rem
+
+/*section services and promotion*/
 .promos
   display flex
   justify-content space-around
   margin 0 auto
   width 90%
-  padding-top 30px
+  padding-top 2rem
   .prom
-    border solid 2px #E20613
-    padding 5px
-    border-radius 2px
+    border solid 2px var(--redLucy)
+    padding 15px
+    border-radius 4px
     width 30%
-    //background url(../img/prom.png) center no-repeat
     text-align center
     p
-      font-size 16px
       margin 0 auto
       max-width 95%
       padding 10px 0 10px 0
-      background #FFEA00
+      background var(--yellowLucy)
     li
-      list-style none
+      list-style-position inside
+      text-align left
   img
     max-width 100%
     height auto
-  
 
-figure
-  figcaption
-    text-align center
-    padding-top 1em
-  img
-  display block
-  margin 50px auto
-  text-align center
-    
-
-/*Contacto*/
+/*section contact*/
 ol
   margin 0 auto
   max-width 280px
@@ -213,8 +220,8 @@ ol
     height auto
     padding 5px 0 10px 0
   strong
-    background #E20613
-    color #FFEA00
+    background var(--redLucy)
+    color var(--yellowLucy)
     display inline-block
     height 44px
     width 100px
@@ -222,27 +229,26 @@ ol
     line-height 44px
     border-radius 3px 0 0 3px
   a
-    border solid #E20613 1px
+    border solid var(--redLucy) 1px
     display inline-block
     line-height 44px
     height 44px
     width 180px
-    color #E20613
+    color var(--redLucy)
     padding-left 10px
     border-radius 0 3px 3px 0
   a:hover
     padding-left 15px
 
-/*Pie*/    
+/*section footer*/    
 footer
   text-align center
   margin 0 auto
-  background #E20613
-  color #FFEA00
+  background var(--redLucy)
+  color var(--yellowLucy)
   max-width 240px
   padding 20px 0 20px 0
   border-radius 3px 3px 0 0
-    
 
 /*Responsive Design*/
 @media screen and (max-width:920px)
@@ -255,8 +261,6 @@ footer
       font-size 21px
     h3
       font-size 28px
-  .dowm
-    top -10px
 
 @media screen and (max-width:480px)
   .promos
@@ -264,4 +268,3 @@ footer
     .prom
       width 100%
       margin 20px auto
-

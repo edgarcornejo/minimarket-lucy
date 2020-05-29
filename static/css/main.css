@@ -1,0 +1,423 @@
+/* HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+:root {
+  font-size: 16px;
+  --yellowLucy: #ffea00;
+  --orangeLucy: #f6990e;
+  --redLucy: #e20312;
+  --purpleLucy: #251a89;
+}
+html {
+  line-height: 1.4;
+  height: 100%;
+}
+/*selection*/
+::-moz-selection {
+  background: var(--yellowLucy);
+  text-shadow: none;
+}
+::selection {
+  background: var(--yellowLucy);
+  text-shadow: none;
+}
+/*Separator*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2rem 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: top;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+/*reset hyperlink*/
+a {
+  color: var(--orangeLucy);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--redLucy);
+}
+/*Basic animation*/
+.anin-rapido {
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.anin-normal {
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.anin-lento {
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+/*Main*/
+body {
+  background: var(--yellowLucy);
+  width: 100%;
+  height: 100%;
+  color: var(--redLucy);
+  font-size: 1rem;
+  font-family: 'Muli', sans-serif, Helvetica, Arial;
+}
+#cover {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: auto/9;
+  max-width: 80%;
+  height: auto;
+}
+.dowm {
+  display: block;
+  margin: 0 auto;
+  width: 3rem;
+  height: auto;
+  position: relative;
+  top: -10rem;
+}
+/*animation in main*/
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+/*Header*/
+header {
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+  background: var(--purpleLucy);
+  color: #fff;
+}
+header h1 {
+  font-size: 2.1rem;
+  padding-bottom: 0.8rem;
+}
+header hr {
+  width: 18rem;
+  margin: 0 auto;
+  padding-top: 0.8rem;
+}
+header strong {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+}
+/*Section styles*/
+section {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+section article {
+  padding: 6rem 0 6rem 0;
+}
+section h2 {
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: double 4px var(--redLucy);
+  padding-bottom: 1.5rem;
+}
+section p {
+  font-size: 1.5rem;
+  padding-top: 5rem;
+  max-width: 980px;
+  display: block;
+  margin: 0 auto;
+}
+section h3 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 50px;
+}
+section h4 {
+  background: var(--yellowLucy);
+  font-size: 1.2rem;
+}
+figure {
+  text-align: center;
+}
+figure img {
+  margin: 3rem auto;
+  width: auto/9;
+  max-width: 15rem;
+}
+/*section services and promotion*/
+.promos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 2rem;
+}
+.promos .prom {
+  border: solid 2px var(--redLucy);
+  padding: 15px;
+  border-radius: 4px;
+  width: 30%;
+  text-align: center;
+}
+.promos .prom p {
+  margin: 0 auto;
+  max-width: 95%;
+  padding: 10px 0 10px 0;
+  background: var(--yellowLucy);
+}
+.promos .prom li {
+  list-style-position: inside;
+  text-align: left;
+}
+.promos img {
+  max-width: 100%;
+  height: auto;
+}
+/*section contact*/
+ol {
+  margin: 0 auto;
+  max-width: 280px;
+  height: auto;
+  list-style: none;
+  padding-top: 50px;
+}
+ol li {
+  height: auto;
+  padding: 5px 0 10px 0;
+}
+ol strong {
+  background: var(--redLucy);
+  color: var(--yellowLucy);
+  display: inline-block;
+  height: 44px;
+  width: 100px;
+  padding-left: 15px;
+  line-height: 44px;
+  border-radius: 3px 0 0 3px;
+}
+ol a {
+  border: solid var(--redLucy) 1px;
+  display: inline-block;
+  line-height: 44px;
+  height: 44px;
+  width: 180px;
+  color: var(--redLucy);
+  padding-left: 10px;
+  border-radius: 0 3px 3px 0;
+}
+ol a:hover {
+  padding-left: 15px;
+}
+/*section footer*/
+footer {
+  text-align: center;
+  margin: 0 auto;
+  background: var(--redLucy);
+  color: var(--yellowLucy);
+  max-width: 240px;
+  padding: 20px 0 20px 0;
+  border-radius: 3px 3px 0 0;
+}
+/*Responsive Design*/
+@media screen and (max-width: 920px) {
+  section {
+    min-height: auto;
+    padding: 30px 0 30px 0;
+  }
+  section h2 {
+    font-size: 37px;
+  }
+  section p {
+    font-size: 21px;
+  }
+  section h3 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .promos {
+    display: block;
+  }
+  .promos .prom {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(12%);
+            transform: translateY(12%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(12%);
+            transform: translateY(12%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
