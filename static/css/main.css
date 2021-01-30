@@ -280,7 +280,6 @@ section h3 {
   padding-top: 50px;
 }
 section h4 {
-  background: var(--yellowLucy);
   font-size: 1.2rem;
 }
 figure {
@@ -296,6 +295,8 @@ figure img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0 auto;
@@ -303,20 +304,27 @@ figure img {
   padding-top: 2rem;
 }
 .promos .prom {
-  border: solid 2px var(--redLucy);
+  background: #fff;
+  -webkit-box-shadow: 0 0 15px 3px rgba(0,0,0,0.1);
+          box-shadow: 0 0 15px 3px rgba(0,0,0,0.1);
   padding: 15px;
   border-radius: 4px;
   width: 30%;
   text-align: center;
+  min-width: 30%;
+  margin-bottom: 2rem;
 }
 .promos .prom p {
   margin: 0 auto;
-  max-width: 95%;
+  width: 95%;
   padding: 10px 0 10px 0;
-  background: var(--yellowLucy);
 }
-.promos .prom li {
-  list-style-position: inside;
+.promos .prom ul {
+  width: 85%;
+  margin: 0 auto;
+}
+.promos .prom ul li {
+  list-style-position: outside;
   text-align: left;
 }
 .promos img {

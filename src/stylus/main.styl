@@ -174,7 +174,6 @@ section
     font-size 2rem
     padding-top 50px
   h4
-    background var(--yellowLucy)
     font-size 1.2rem
 
 figure
@@ -187,24 +186,30 @@ figure
 /*section services and promotion*/
 .promos
   display flex
+  flex-wrap wrap
   justify-content space-around
   margin 0 auto
   width 90%
   padding-top 2rem
   .prom
-    border solid 2px var(--redLucy)
+    background rgb(255 255 255)
+    box-shadow 0 0 15px 3px rgba(0 0 0 0.1)
     padding 15px
     border-radius 4px
     width 30%
     text-align center
+    min-width 30%
+    margin-bottom 2rem
     p
       margin 0 auto
-      max-width 95%
+      width 95%
       padding 10px 0 10px 0
-      background var(--yellowLucy)
-    li
-      list-style-position inside
-      text-align left
+    ul
+      width 85%
+      margin 0 auto
+      li
+        list-style-position outside
+        text-align left
   img
     max-width 100%
     height auto
